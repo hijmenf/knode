@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: knode-config
+  namespace: knode-system
+data:
+  {{ toYaml .Values.configfiles | indent 2 }}
