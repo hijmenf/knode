@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: knode-config
 data:
-  {{ toYaml .Values.configfiles | indent 2 }}
+  {{ toYaml .Values.configfiles }}
